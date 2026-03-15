@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Cloud Storage Images</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .image-box {
+            width: 300px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Cloud Storage Image Gallery</h1>
+
+<div class="gallery">
+
+    <div class="image-box">
+        <h3>Image 1 – Multi-Color Parrot</h3>
+        <img src="https://storage.googleapis.com/sara-bucket/image1.jpg">
+        <p>This image demonstrates successful retrieval of a publicly stored object from the Google Cloud Storage bucket. It confirms that the storage configuration and public access permissions are correctly implemented.</p>
+    </div>
+
+    <div class="image-box">
+        <h3>Image 2 – Landscape View</h3>
+        <img src="https://storage.googleapis.com/sara-bucket/image2.jpg">
+        <p>This image is served directly from the multi-region storage bucket and displayed through the web server, verifying the integration between Cloud Storage and the virtual machine-hosted HTML page.</p>
+    </div>
+
+    <div class="image-box">
+        <h3>Image 3 – Blue Human Eye</h3>
+        <img src="https://storage.googleapis.com/sara-bucket/image3.jpg">
+        <p>This image confirms that multiple objects stored in the bucket can be accessed publicly via HTTP, demonstrating correct URL mapping and object-level access configuration.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
